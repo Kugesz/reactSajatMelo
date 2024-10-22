@@ -7,9 +7,58 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   width: 1280px;
+  margin: 0 auto;
+  color: w;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.container, footer, header {
+  padding: 20px;
+  border-left: 1px solid burlywood;
+  border-right: 1px solid burlywood;
+  background-color: beige;
+}
+header {
+  border-bottom: 1px solid burlywood;
+}
+
+p {
+  line-height: 150%;
+  text-indent: 30px;
+}
+
+section{
+  margin: 10px;
+  text-align: justify;
+}
+
+table {
+  width: 100%;
+}
+
+tr:nth-child(odd) {
+  background-color: burlywood;
+}
+
+th {
+  width: 20%;
+}
+
+td {
+  padding: 10px;
+  border: 1px solid burlywood;
+}
+
+img {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+footer {
+  text-align: center;
+  border-top: 1px solid burlywood;
 }

@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import App from './pages/App';
 import Footer from './pages/Footer';
 import Header from './pages/Header'
+import ErrorPage from './pages/404'
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
@@ -12,7 +14,12 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <Header />
-    <App />
+    <Router>
+      <Routes>
+        <Route path='/' element={<App/>}/>
+        <Route path='*' element={<ErrorPage/>}/>
+      </Routes>
+    </Router>
     <Footer/>
   </React.StrictMode>
 );

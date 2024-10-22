@@ -1,5 +1,12 @@
 import React from 'react';
-import logo from '../logo.svg';
+import Kep1 from '../img/kep01.jpg'
+import Kep2 from '../img/kep02.jpg'
+import Kep3 from '../img/kep03.jpg'
+import Kep4 from '../img/kep04.jpg'
+import Kep5 from '../img/kep05.jpg'
+import Kep6 from '../img/kep06.jpg'
+import Kep7 from '../img/kep07.jpg'
+import Kep8 from '../img/kep08.jpg'
 import './App.css';
 
 function App() {
@@ -16,68 +23,64 @@ function App() {
             <h2>Pályafutása</h2>
             <table>
               <tr>
-                <th></th>
-                <th></th>
+                <th>Kategória</th>
+                <td>Formula–1-es világbajnokság</td>
               </tr>
               <tr>
-                <th></th>
-                <th></th>
+                <th>Aktív évei</th>
+                <td>1965 – 1973</td>
               </tr>
               <tr>
-                <th></th>
+                <th colSpan={2}>Csapatai: BRM, Matra, Tyrrell</th>
               </tr>
               <tr>
-                <th></th>
-                <th></th>
+                <th>Nagydíjak száma</th>
+                <td>100 (99 rajt)</td>
               </tr>
               <tr>
-                <th></th>
-                <th></th>
+                <th>Világbajnoki címek</th>
+                <td>3 (1969, 1971, 1973)</td>
               </tr>
               <tr>
-                <th></th>
-                <th></th>
+                <th>Győzelmek</th>
+                <td>27</td>
               </tr>
               <tr>
-                <th></th>
-                <th></th>
+                <th>Dobogós helyezések</th>
+                <td>43</td>
               </tr>
             </table>
-            Kategória	Formula–1-es világbajnokság
-            Aktív évei	1965 – 1973
-            Csapatai: BRM, Matra, Tyrrell
-            Nagydíjak száma	100 (99 rajt)
-            Világbajnoki címek	3 (1969, 1971, 1973)
-            Győzelmek	27
-            Dobogós helyezések	43
         </section>
         <section id="kepek">
             <h2>Képek</h2>
             <div>
-                <img src="../img/kep01.jpg" alt="kep"/>
+                <img className = "img-thumbnail"src={Kep1} alt="kep"/>
             </div>
             <div>
-                <img src="../img/kep02.jpg" alt="kep"/>
+                <img className = "img-thumbnail"src={Kep2} alt="kep"/>
             </div>
             <div>
-                <img src="../img/kep03.jpg" alt="kep"/>
+                <img className = "img-thumbnail"src={Kep3} alt="kep"/>
             </div>
             <div>
-                <img src="../img/kep04.jpg" alt="kep"/>
+                <img className = "img-thumbnail"src={Kep4} alt="kep"/>
             </div>
             <div>
-                <img src="../img/kep05.jpg" alt="kep"/>
+                <img className = "img-thumbnail"src={Kep5} alt="kep"/>
             </div>
             <div>
-                <img src="../img/kep06.jpg" alt="kep"/>
+                <img className = "img-thumbnail"src={Kep6} alt="kep"/>
             </div>
             <div>
-                <img src="../img/kep07.jpg" alt="kep"/>
+                <img className = "img-thumbnail"src={Kep7} alt="kep"/>
             </div>
             <div>
-                <img src="../img/kep08.jpg" alt="kep"/>
+                <img className = "img-thumbnail"src={Kep8} alt="kep"/>
             </div>
         </section>
+        <script src='../js/bootstrap.min.js'></script>
+        <script src='../js/jquery.min.js'></script>
+        <script src='../js/popper.min.js'></script>
     </div>
   );
 }
